@@ -5,13 +5,13 @@
     <title>Emma Boushka</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header class="navbar">
-        <!--wrapping img tag in a div to avoid wonky flex behaviors-->
-        <div class="logo"><img src="./assets/images/logo.png" alt="The letters 'E' and 'B' on a purple circle"></div>
-        <nav
+    <header class="navhead">
+        <img class="logo" src="./assets/images/logo.png" alt="The letters 'E' and 'B' on a purple circle">
+        <nav class="navbar">
             <ul id="home">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -20,10 +20,10 @@
             </ul>
         </nav>
     </header>
-    <main class="content">
-        <section id="about">
-            <div class="bio">
-                <h1>Meet Emma</h1>
+    <main>
+        <article id="about">
+            <h1>Meet Emma</h1>
+         
                 <p>Emma Boushka is currently enrolled in a six-month Coding Bootcamp at the University of Texas at
                     Austin to become a full-stack web developer. She thrives in the fast paced and goal-oriented
                     environment of the bootcamp and values the opportunity to continuously learn and grow. </p>
@@ -38,17 +38,16 @@
                 <p>In her free time, Emma loves to take her dog on walks, rollerblade, and build lego sets.
                     Besides her dog, her pride and joy is her Harry Potter Lego collection that she displays in her
                     home. </p>
-            </div>
-            <div><img class="mypic" src="./assets/images/aboutme.png" alt="Emma Boushka in front of a purple background."></div>
-        </section>
+              <!--wrap imgs in div to avoid funky flex behavior-->
+            <div><img class="mypic" src="./assets/images/aboutme.png" alt="Emma Boushka in front of a purple background."></div>  
+        </article>
     
-        <section id="mywork">
-            <h2 class="section-heading">Deployed Projects</h2>
-            <div class="mywork">
-                <figure id="featureproject">
+        <section class="mywork">
+            <h2 class="section-heading">Her Projects</h2>
+                <figure #feature>
                     <p><a href="https://boushka9.github.io/neon-css-code-snippets/" target="_blank">CSS Code Snippet</a></p>
-                    <a href="https://boushka9.github.io/neon-css-code-snippets/" target="_blank"><img src="./assets/images/featureproj.png" alt="CSS website header"></a>
-                </figure>
+                    <a href="https://boushka9.github.io/neon-css-code-snippets/" target="_blank"><img id="featureproject" src="./assets/images/featureproj.png" alt="CSS website header"></a>
+                </figure>  
                 <figure>
                     <p><a href="https://github.com/boushka9/accessibility-is-groovy" target="_blank">Accessibility Refactor</a></p>
                     <a href="https://github.com/boushka9/accessibility-is-groovy" target="_blank"><img src="./assets/images/access.png" alt="Refactored page header"></a>
@@ -61,7 +60,6 @@
                     <p><a href="#" target="_blank">Photo Gallery</a></p>
                     <a href="#" target="_blank"><img src="./assets/images/boston.png" alt="Boston skyline across a river"></a>
                 </figure>
-            </div>
         </section>
 
         <footer id="contactme">
