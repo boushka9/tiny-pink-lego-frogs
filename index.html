@@ -5,6 +5,7 @@
     <title>Emma Boushka</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./assets/style.css">
+    <!--added costom font via google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
@@ -37,8 +38,7 @@
                 <p>In her free time, Emma loves to take her dog on walks, rollerblade, and build lego sets.
                     Besides her dog, her pride and joy is her Harry Potter Lego collection that she displays in her
                     home. </p>
-              <!--wrap imgs in div to avoid funky flex behavior-->
-            <div><img class="mypic" src="./assets/images/aboutme.png" alt="Emma Boushka in front of a purple background."></div>  
+            <img class="mypic" src="./assets/images/aboutme.png" alt="Emma Boushka in front of a purple background.">
         </article>
     
         <section id="mywork">
@@ -47,11 +47,13 @@
                     <p><a href="https://boushka9.github.io/neon-css-code-snippets/" target="_blank">CSS Code Snippet</a></p>
                     <a href="https://boushka9.github.io/neon-css-code-snippets/" target="_blank"><img src="./assets/images/featureproj.png" alt="CSS website header"></a>
                 </figure>
-                <div id="queryrow">  
+                <!--This section becomes a flex row when screen is larger-->
+                <div id="queryrow"> 
                      <figure>
                          <p><a href="https://github.com/boushka9/accessibility-is-groovy" target="_blank">Accessibility Refactor</a></p>
                          <a href="https://github.com/boushka9/accessibility-is-groovy" target="_blank"><img src="./assets/images/access.png" alt="Refactored page header"></a>
                      </figure>
+                     <!--Placeholder hrefs below-->
                      <figure>
                          <p><a href="https://www.youtube.com/watch?v=eBGIQ7ZuuiU" target="_blank">Interactive Resume</a></p>
                          <a href="https://www.youtube.com/watch?v=eBGIQ7ZuuiU" target="_blank"><img src="./assets/images/resumeclip.png" alt="Portion of Emma Boushka's resume"></a>
