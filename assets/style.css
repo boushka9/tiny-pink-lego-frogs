@@ -13,6 +13,7 @@
 body {
      height: 100%;
      width: 100%;
+     /*bg-img won't be cut off to cover - will repeat (centered) instead */
      background-image: url(images/background.png);
      background-size: contain;
      background-position: center;
@@ -33,7 +34,6 @@ body {
 
 .logo {
     width: 200px;
-    cursor: pointer;
     border-radius: 50%;
     margin-bottom: 20px;
 }
@@ -48,11 +48,12 @@ body {
     font-size: 26px;
 }
 
+/*style links*/
 a[href], a:link {
     color: var(--smokey);
     text-decoration: underline;
 } 
-
+/*change color on hover*/
 .navbar li a:hover {
     color: var(--dark-text);
 }
@@ -83,7 +84,6 @@ h1 {
 .mypic {
     width: 50%;
     height:50%;
-    margin-left: 25%;
     margin-bottom: 15%;
 } 
 
@@ -112,7 +112,7 @@ h1 {
     border-radius: 20%;
     transition: all .2s ease-in-out;
 }
-
+/* On hover, boxes grow smoothly, cursor changes to grab hand*/
 #mywork img:hover {
     transform: scale(1.1); 
     cursor: grab;
@@ -132,7 +132,7 @@ h1 {
     width: 100%;
     align-items: center;
 }
-
+/* W/in flex column display list in single line */
 #contactme ul li {
     display: inline-block;
     list-style: none;
@@ -153,12 +153,12 @@ and about me paragraph grows*/
         font-size: 27px;
     }
     .navhead {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    margin: 10px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        margin: 10px;
     }
 
     .navbar li {
@@ -166,9 +166,15 @@ and about me paragraph grows*/
         padding: 10px;
     }
 }
-/*Larger screen-> Logo and about me paragraph grows and
+/*Larger screen-> Logo/nav and about me paragraph grows and
 Imgs under feature project shrink and become flex row w/wrap*/
 @media screen and (min-width: 992px) {
+    .logo {
+        width: 275px;
+    }
+    .navbar li{
+        font-size: 30px;
+    }
     #about p {
         width: 80%;
         font-size: 30px;
@@ -183,7 +189,6 @@ Imgs under feature project shrink and become flex row w/wrap*/
     #mywork #feature img {
         width: 525px;
         height: auto;
-        
     }
     #mywork img {
         width: 300px;
