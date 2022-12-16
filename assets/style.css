@@ -1,0 +1,194 @@
+:root {
+    --dark-text: rgb(10, 67, 94, 1);
+    --smokey: rgb(165, 139, 175, 1);
+    --light-contrast: rgb(220, 196, 228);
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Sans Narrow', sans-serif;
+    }
+    
+body {
+     height: 100%;
+     width: 100%;
+     background-image: url(images/background.png);
+     background-size: contain;
+     background-position: center;
+     padding-left: 5%;
+     padding-right: 5%;
+     box-sizing: border-box;
+     color:var(--dark-text);
+}
+/*navbar and logo makeup navhead - on small screen logo is above navbar*/    
+.navhead {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center; 
+    margin: 10px;
+}
+
+.logo {
+    width: 200px;
+    cursor: pointer;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+/*navbar displayd in line w/in flex container*/
+.navbar li {
+    display: inline;
+    list-style: none;
+    margin: 10px;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 26px;
+}
+
+a[href], a:link {
+    color: var(--smokey);
+    text-decoration: underline;
+} 
+
+.navbar li a:hover {
+    color: var(--dark-text);
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: 100;
+    margin-top: 24px;
+    margin-bottom: 24px; 
+    text-align: center;
+}
+
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#about p {
+    width: 60%;
+    font-size: 25px;
+    text-align: center;
+    line-height: 45px;
+    margin-bottom: 20px;
+}
+
+
+.mypic {
+    width: 50%;
+    height:50%;
+    margin-left: 25%;
+    margin-bottom: 15%;
+} 
+
+#mywork{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.section-heading {
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+    padding: 15px;
+}
+#mywork #feature img {
+    width: 500px;
+    height: auto;
+}
+
+#mywork img {
+    width: 350px;
+    height: auto;
+    padding: 10px 0 10px 0;
+    border-radius: 20%;
+    transition: all .2s ease-in-out;
+}
+
+#mywork img:hover {
+    transform: scale(1.1); 
+    cursor: grab;
+}
+
+#mywork p {
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: center;
+    padding: 10px;
+}
+
+#contactme {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+#contactme ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 26px;
+}
+
+
+
+/* when screen is larger than small phone the nav bar should 
+have space between it and logo 
+and about me paragraph grows*/
+@media screen and (min-width: 786px) {
+    #about p {
+        width: 70%;
+        font-size: 27px;
+    }
+    .navhead {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+    }
+
+    .navbar li {
+        margin: 20px;
+        padding: 10px;
+    }
+}
+/*Larger screen-> Logo and about me paragraph grows and
+Imgs under feature project shrink and become flex row w/wrap*/
+@media screen and (min-width: 992px) {
+    #about p {
+        width: 80%;
+        font-size: 30px;
+    }
+    #queryrow {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+    #mywork #feature img {
+        width: 525px;
+        height: auto;
+        
+    }
+    #mywork img {
+        width: 300px;
+        height: 300px;
+        margin: 10px 25px 10px 25px;
+        padding: 10px 0 10px 0;
+    }
+}    
