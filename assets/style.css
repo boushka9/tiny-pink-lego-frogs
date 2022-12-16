@@ -53,7 +53,7 @@ a[href], a:link {
     color: var(--smokey);
     text-decoration: underline;
 } 
-/*change color on hover*/
+/*nav links change color on hover*/
 .navbar li a:hover {
     color: var(--dark-text);
 }
@@ -84,7 +84,7 @@ h1 {
 .mypic {
     width: 50%;
     height:50%;
-    margin-bottom: 15%;
+    margin-bottom: 10%;
 } 
 
 #mywork{
@@ -101,7 +101,7 @@ h1 {
     padding: 15px;
 }
 #mywork #feature img {
-    width: 500px;
+    width: 450px;
     height: auto;
 }
 
@@ -112,7 +112,7 @@ h1 {
     border-radius: 20%;
     transition: all .2s ease-in-out;
 }
-/* On hover, boxes grow smoothly, cursor changes to grab hand*/
+/* On hover, boxes grow smoothly (from transition), cursor changes to grab hand*/
 #mywork img:hover {
     transform: scale(1.1); 
     cursor: grab;
@@ -142,7 +142,10 @@ h1 {
     font-size: 26px;
 }
 
-
+/*writen a second time in code for links in footer for specificity */ 
+#contactme li a:hover {
+    color: var(--dark-text);
+}
 
 /* when screen is larger than small phone the nav bar should 
 have space between it and logo 
@@ -187,7 +190,7 @@ Imgs under feature project shrink and become flex row w/wrap*/
         justify-content: space-around;
     }
     #mywork #feature img {
-        width: 525px;
+        width: 550px;
         height: auto;
     }
     #mywork img {
