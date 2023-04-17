@@ -8,7 +8,7 @@
 
 The purpose of this project was to create a landing page that people can visit to get to know me and my work as a web developer. Included in my landing page is a brief introduction to who I am, how I work, what I value, and (if I do say so myself) a nice picture of me. This is to aid potential employers in gauging what kind of employee and team member I would be. Additionally, Potential employers can access all of my projects on my landing page to see first hand what kind of work I am capable of producing. 
 
-## <img src="./assets/images/installation.png" alt="Installation Header" height="40px">
+## <img src="./assets/images/Installation.png" alt="Installation Header" height="40px">
 
 N/A
 
